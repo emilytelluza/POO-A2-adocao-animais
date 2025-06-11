@@ -25,23 +25,22 @@ adocao-animais/
 
 ## ▶️ Como Executar (Windows - PowerShell)
 
-### 1. Acesse a pasta do projeto
+### 1. Clone e acesse a pasta do projeto
 
 ```powershell
-cd caminho/para/adocao-animais
+git clone https://github.com/emilytelluza/POO-A2-adocao-animais
+cd POO-A2-adocao-animais
 ```
 
 ### 2. Compile os arquivos
 
 ```powershell
-cd caminho/para/adocao-animais/src
-Get-ChildItem -Recurse -Filter *.java | ForEach-Object { javac -d bin $_.FullName }
+javac -d bin src/model/*.java src/service/*.java src/util/*.java src/main/*.java
 ```
 
 ### 3. Execute o programa
 
 ```powershell
-cd ..
 java -cp bin main.Main
 ```
 
